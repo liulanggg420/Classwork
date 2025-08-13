@@ -1,0 +1,71 @@
+/* Import Google Font */
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+
+/* Hero section using background-image */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.source a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Article section */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #eee;
+  margin-top: 40px;
+}

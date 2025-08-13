@@ -1,0 +1,79 @@
+/* Typography + Base */
+body {
+  margin: 0;
+  padding: 2vh 4vw;
+  font-family: 'Inter', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Container */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+}
+
+/* Individual Card */
+.card {
+  flex: 1 1 calc(25vw - 2rem);
+  min-width: 220px;
+  max-width: 300px;
+  height: auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Interactivity */
+.card:hover {
+  transform: translateY(-1vh) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Variety of Heights */
+.card1 { height: 40vh; }
+.card2 { height: 30vh; }
+.card3 { height: 45vh; }
+.card4 { height: 35vh; }
+.card5 { height: 50vh; }
+.card6 { height: 33vh; }
+.card7 { height: 48vh; }
+.card8 { height: 36vh; }
+.card9 { height: 42vh; }
+.card10 { height: 38vh; }
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .card h2 {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
