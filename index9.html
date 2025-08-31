@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generative Pattern - p5.js</title>
+    <!-- Load p5.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <!-- Load your sketch -->
+    <script src="week9p5.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+      #instructions {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 15px;
+        background: yellow;
+        color: black;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+        opacity: 1;
+        transition: opacity 2s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="instructions">
+      Mouse ↑/↓ = control drip<br>
+      Click = freeze/unfreeze<br>
+      Space = new palettes
+    </div>
+
+    <script>
+      // fade out and remove instructions after 6 seconds
+      setTimeout(() => {
+        const box = document.getElementById("instructions");
+        box.style.opacity = 0; // fade
+        setTimeout(() => box.remove(), 2000); // remove after fade
+      }, 15000);
+    </script>
+  </body>
+</html>
+
